@@ -1,16 +1,53 @@
 [M]: #main  "история проекта"
+[P]: icons/progress.png
 [S]: icons/success.png
 [B]: icons/bug.png
 
 <a name="main"></a>
 **История изменений**  
 
-Основан: 4 июня, 2021 года,  
-в 22:59:48, Картонажником.  
-==========================  
+Основан: 4 июня, 2021 года, в 22:59:48, Картонажником 
+=====================================================
 
 [2021y-06m-04d][22:59:48] Idrisov Denis R.  
 [2021y-06m-04d][22:59:48] birthday of the project  
+
+-----------------------------------------------------
+
+<a name="v001"></a>
+[![P]][M] **Версия 0.0.1 (предварительная)**
+--------------------------------------------
+[2021y-06m-05d][23:55:00] время коммита в мастере  
+
+|      дата     |  время   |   ветка   | статус |  
+|:-------------:|:--------:|:---------:|:------:|  
+| 2021y-06m-05d | 20:40:00 | [#3-impl] | DONE   |  
+| 2021y-06m-05d | 12:10:00 | [#3-impl] | BEGIN  |  
+
+1) upd: `README.md`  
+
+2) add: public API:
+     - add: `test-list.hpp`    001 PRE
+     - add: `mygtest.ver`      001 PRE
+     - add: `mygtest.hpp`      001 PRE
+     - add: `modern.hpp`       001 PRE
+     - add: `main.hpp`         001 PRE
+
+3) add: private details:
+     - add: `private`: 
+       - add: `component.hpp`  001 PRE
+       - add: `extension.hpp`  001 PRE
+       - add: `features.hpp`   001 PRE
+       - add: `dprint.hpp`     001 PRE
+       - add: `reg08.hpp`      001 PRE
+       - add: `reg10.hpp`      001 PRE
+       - add: `macro`:
+         - add: `overload-7.hpp`  001 PRE
+
+4) add: source details:
+     - add: `synch.hpp`        001 PRE
+
+[#3-impl]: tasks/2021y-06m-05d-0003-impl.md
 
 -----------------------------------------------------
 
