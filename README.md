@@ -133,6 +133,7 @@ dVIEW_BUILD("[mygtest]", dMYGTEST)
 
 ----------------------------------------------
 
-1) [История](docs/history.md)  
+1) [Документация](docs/table.md)  
+2) [История](docs/history.md)  
 
 
