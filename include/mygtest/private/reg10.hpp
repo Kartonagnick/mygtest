@@ -1,7 +1,8 @@
+// [2021y-06m-08d][15:00:00] Idrisov Denis R. 001
 // [2021y-06m-05d][12:10:00] Idrisov Denis R. 001 PRE
 #pragma once
 #ifndef dMYGTEST_REG10_USED_ 
-#define dMYGTEST_REG10_USED_ 001 PRE
+#define dMYGTEST_REG10_USED_ 1
 
 #include <mygtest/private/features.hpp>
 

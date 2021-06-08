@@ -1,5 +1,6 @@
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//+ changed: 2021y-06m-08d 15:00:00 June                       +
 //+ changed: 2020y-04m-19d 08:07:24 April                      +
 //+ created: 2019y-05m-16d 11:15:19 May                        +
 //+ macro/overload-7.hpp                                       +
@@ -11,7 +12,7 @@
 
 #pragma once
 #ifndef dTOOLS_MACRO_OVERLOAD_7_USED_
-#define dTOOLS_MACRO_OVERLOAD_7_USED_ 001 PRE
+#define dTOOLS_MACRO_OVERLOAD_7_USED_ 1
 
 //==============================================================================
 
