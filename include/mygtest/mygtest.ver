@@ -1,12 +1,15 @@
-// [2021y-06m-08d][15:00:00] Idrisov Denis R. 001
-// [2021y-06m-05d][12:10:00] Idrisov Denis R. 001 PRE
+
+// [2023y-01m-29d][19:00:00] 002 Idrisov Denis R. PRE
+// [2021y-06m-08d][15:00:00] 001 Idrisov Denis R.
+// [2021y-06m-05d][12:10:00] 001 Idrisov Denis R.
+
 #pragma once
 #ifndef dMYGTEST_VERSION_USED_ 
 #define dMYGTEST_VERSION_USED_ 1
 
 #define dMYGTEST_MAJOR 0
 #define dMYGTEST_MINOR 0
-#define dMYGTEST_PATCH 1
+#define dMYGTEST_PATCH 2
 
 //==============================================================================
 //==============================================================================
