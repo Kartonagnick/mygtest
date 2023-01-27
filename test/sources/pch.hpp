@@ -11,6 +11,14 @@
 //==============================================================================
 //==============================================================================
 
+#include <cassert>
+#include <cstring>
+
+#ifndef NDEBUG
+    #include <cassert>
+#endif
+
+
 #include <mygtest/mygtest.hpp>
 #include <stdexcept>
 #include <cassert>
