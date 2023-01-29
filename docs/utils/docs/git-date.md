@@ -35,14 +35,14 @@ call :viewBranch
 [GIT-DATE] run... v0.0.3
 BRANCH: #18-utils
 [ca6e6ea717d40b97a8a80ed8728b19f2dcf115f0][add: task]
-[d84c6486b218fe67554ef03b4800a7228e0f1188][upd: docs/utils/backup.bat (001) PRE]
-[0a48a2b23c0595d9cdb62f0e794788489bb132c1][upd: docs/utils/git-date.bat (001) PRE]
+[d84c6486b218fe67554ef03b4800a7228e0f1188][upd: docs/utils/backup.bat  001  ]
+[0a48a2b23c0595d9cdb62f0e794788489bb132c1][upd: docs/utils/git-date.bat  001  ]
 [b42ef9fb97865d8e7831bbc9a4856976a7f1304b][upd: README.md]
 [5edc1b2f36ae49e58327c9ee698ae9dc8a06365b][upd: docs/home.md]
 [8c12af0378f3df674924a72614d6b67fccf668f2][add: docs/utils/docs/backup.md (001)]
 [6d5af2cf5410fd1e2345579e88320c7982121f20][add: docs/utils/docs/git-date.md (001)]
 [94e9e1a8f7ef46d59843a1f3e3e8b94411a63679][add: docs/utils/table.md (001)]
-[fbbf73667a749105f1af24a90410a43846d6779f][upd: docs/history.md (005) PRE]
+[fbbf73667a749105f1af24a90410a43846d6779f][upd: docs/history.md  005  ]
 [GIT-DATE] completed successfully
 ```
 

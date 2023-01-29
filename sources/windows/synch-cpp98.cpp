@@ -1,5 +1,5 @@
 // [2021y-06m-08d][15:00:00] Idrisov Denis R. 001
-// [2021y-06m-05d][12:10:00] Idrisov Denis R. 001 PRE
+// [2021y-06m-05d][12:10:00] Idrisov Denis R. 001    
 // --------------------------------------------------
 // [2021y-05m-15d][00:42:36] Idrisov Denis R.
 // [2021y-02m-24d] Idrisov Denis R.
