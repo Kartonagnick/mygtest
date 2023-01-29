@@ -3,7 +3,7 @@
 INCLUDE_CONFIGURATIONS =
 
 # --- игнорируемые конфигурации
-EXCLUDE_CONFIGURATIONS =
+EXCLUDE_CONFIGURATIONS = mingw494:32:all:static
 
 # --- версия продукта
 VERSION = mygtest.ver

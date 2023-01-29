@@ -1,0 +1,107 @@
+variables:
+  GIT_STRATEGY:           clone
+  GIT_SUBMODULE_STRATEGY: recursive
+  DIR_DEPLOY:             .\deploy\run
+  DIR_ARTIFACT:           .\_artifacts
+
+before_script:
+  - 'echo off'
+  - 'call "%DIR_DEPLOY%\02-init.bat" "%DIR_ARTIFACT%"'
+
+stages:
+  - clean
+  - build
+  - test
+  - deploy
+
+inspect:
+  stage: clean
+  script:
+    - 'echo cloning repository... success!'
+    - 'call "%DIR_DEPLOY%\03-clean.bat" artifact'
+    - 'call "%DIR_DEPLOY%\03-clean.bat" msvc2022'
+    - 'call "%DIR_DEPLOY%\03-clean.bat" msvc2019'
+    - 'call "%DIR_DEPLOY%\03-clean.bat" msvc2017'
+    - 'call "%DIR_DEPLOY%\03-clean.bat" msvc2015'
+
+build-msvc2022:
+  stage: build
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - 'call "%DIR_DEPLOY%\04-build.bat" msvc2022'
+
+build-msvc2019:
+  stage: build
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - 'call "%DIR_DEPLOY%\04-build.bat" msvc2019'
+
+build-msvc2017:
+  stage: build
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - 'call "%DIR_DEPLOY%\04-build.bat" msvc2017'
+
+build-msvc2015:
+  stage: build
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - 'call "%DIR_DEPLOY%\04-build.bat" msvc2015'
+
+test-msvc2022:
+  stage: test
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - 'call "%DIR_DEPLOY%\05-test.bat" msvc2022'
+
+test-msvc2019:
+  stage: test
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - 'call "%DIR_DEPLOY%\05-test.bat" msvc2019'
+
+test-msvc2017:
+  stage: test
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - 'call "%DIR_DEPLOY%\05-test.bat" msvc2017'
+
+test-msvc2015:
+  stage: test
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - 'call "%DIR_DEPLOY%\05-test.bat" msvc2015'
+
+deploy:
+  stage: deploy
+  variables:
+    GIT_STRATEGY: none
+#  only:
+#  - master
+  script:
+    - 'echo [deploy] ...'
+    - 'echo [uploading] to ftp server ...'
+    - 'call "%DIR_DEPLOY%\06-upload.bat"'
+    - 'call "%DIR_DEPLOY%\03-clean.bat" msvc2022'
+    - 'call "%DIR_DEPLOY%\03-clean.bat" msvc2019'
+    - 'call "%DIR_DEPLOY%\03-clean.bat" msvc2017'
+    - 'call "%DIR_DEPLOY%\03-clean.bat" msvc2015'
+  dependencies:
+    - test-msvc2022
+    - test-msvc2019
+    - test-msvc2017
+    - test-msvc2015
+  artifacts:
+#    untracked: true
+    paths:
+    - '%DIR_ARTIFACT%\*'
+    when: on_success
+    expire_in: 2 days
