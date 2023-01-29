@@ -1,6 +1,6 @@
 @echo off & cls & @echo. & @echo.
-
-@echo [START] please wait...
+@echo [START] please wait... 
+set "eTRACE=ON"
 set "eDEBUG=ON"
 call "%~dp0make.bat" > "%~dp0log.txt" 2>&1
 @echo [DONE]
