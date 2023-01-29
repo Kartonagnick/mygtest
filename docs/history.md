@@ -15,7 +15,7 @@
 -----------------------------------------------------
 
 <a name="v002"></a>
-[![P]][M] **Версия 0.0.2 (предварительная)**
+[![S]][M] **Версия 0.0.2 (предварительная)**
 --------------------------------------------
 [2023y-01m-29d][19:00:00] время коммита в мастере  
 
@@ -54,12 +54,12 @@
 
 1) добавляем документацию.  
    add: `docs/code/private`
-    - add: `component.md`    100 PRE  
-    - add: `extension.md`    100 PRE  
-    - add: `reg08.md`        100 PRE  
-    - add: `reg10.md`        100 PRE  
+    - add: `component.md`    100      
+    - add: `extension.md`    100      
+    - add: `reg08.md`        100      
+    - add: `reg10.md`        100      
     - add: `macro`  
-      - add: `overload-7.md` 100 PRE  
+      - add: `overload-7.md` 100      
 
 [#7-table]: tasks/2021y-06m-07d-0007-table.md
 
@@ -71,12 +71,12 @@
 1) upd: `README.md`  
 2) upd: `docs/home.md`  
 3) добавляем документацию.  
-   add: docs/table.md        001 PRE  
-     add: docs/mygtest.md      001 PRE  
-     add: docs/dprint.md       001 PRE  
-     add: docs/main.md         001 PRE  
-     add: docs/modern.md       001 PRE  
-     add: docs/test-list.md    001 PRE  
+   add: docs/table.md        001      
+     add: docs/mygtest.md      001      
+     add: docs/dprint.md       001      
+     add: docs/main.md         001      
+     add: docs/modern.md       001      
+     add: docs/test-list.md    001      
 
 [#5-table]: tasks/2021y-06m-06d-0005-table.md
 
@@ -88,25 +88,25 @@
 1) upd: `README.md`  
 
 2) add: public API:
-     - add: `test-list.hpp`    001 PRE
-     - add: `mygtest.ver`      001 PRE
-     - add: `mygtest.hpp`      001 PRE
-     - add: `modern.hpp`       001 PRE
-     - add: `main.hpp`         001 PRE
+     - add: `test-list.hpp`    001    
+     - add: `mygtest.ver`      001    
+     - add: `mygtest.hpp`      001    
+     - add: `modern.hpp`       001    
+     - add: `main.hpp`         001    
 
 3) add: private details:
      - add: `private`: 
-       - add: `component.hpp`  001 PRE
-       - add: `extension.hpp`  001 PRE
-       - add: `features.hpp`   001 PRE
-       - add: `dprint.hpp`     001 PRE
-       - add: `reg08.hpp`      001 PRE
-       - add: `reg10.hpp`      001 PRE
+       - add: `component.hpp`  001    
+       - add: `extension.hpp`  001    
+       - add: `features.hpp`   001    
+       - add: `dprint.hpp`     001    
+       - add: `reg08.hpp`      001    
+       - add: `reg10.hpp`      001    
        - add: `macro`:
-         - add: `overload-7.hpp`  001 PRE
+         - add: `overload-7.hpp`  001    
 
 4) add: source details:
-     - add: `synch.hpp`        001 PRE
+     - add: `synch.hpp`        001    
 
 [#3-impl]: tasks/2021y-06m-05d-0003-impl.md
 
