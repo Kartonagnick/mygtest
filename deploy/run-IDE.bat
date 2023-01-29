@@ -1,93 +1,34 @@
 @echo off & call :checkParent
 if errorlevel 1 (exit /b 1)
+
 rem ============================================================================
 rem ============================================================================
+
 :main
   setlocal
   call "%~dp0ver.bat"
-  @echo [MAKE] run... v%eMAKE_VERSION%
-  rem set "eTRACE=ON"
-  rem set "eDEBUG=ON"
+  @echo [RUN-MSVC] run... v%eMAKE_VERSION%
 
-  set "VC08=msvc2008:32:release:static"
-  set "VC10=msvc2010:32:debug:static"
-  set "VC12=msvc2012:32:release:static"
-  set "VC13=msvc2013:32:debug:static"
-  set "VC15=msvc2015:32:release:static"
-  set "VC17=msvc2017:32:debug:static"
-  set "VC19=msvc2019:64:release:static"
-  set "VC=%VC08%;%VC10%;%VC12%;%VC13%;%VC15%;%VC17%;%VC19%"
+::set "eDEBUG=ON"
+::set "eTRACE=ON"
 
-  set "MG81=mingw810:64:release:static"
-  set "MG73=mingw730:64:release:static"
-  set "MG72=mingw720:64:release:static"
-  set "MG=%MG72%;%MG73%;%MG81%;"
+  set "IDE=VisualStudio"
+::set "IDE=QtCreator"
 
-  rem set "order=mingw494:32:debug:static" bug!!!
-  rem set "order=%VC%"
-  rem set "order=%MG%"
-  rem set "order=%VC%;%MG%"
-  set "order=%VC19%"
-::set "order=all"
-  set "order=msvc2015:64:debug:static"
+  set "order=msvc2022:64:release:static"
+::set "order=msvc2019:64:release:static"
+::set "order=msvc2017:64:release:static"
+::set "order=msvc2008:64:release:static"
+::set "order=msvc2015:64:release:static"
 
-  rem for development
-  (call :generate) && (goto :success) || (goto :failed)
-
-::(call :clean)     || (goto :failed)
-::(call :build)     || (goto :failed)
-::(call :runTests)  || (goto :failed)
-::(call :runStress) || (goto :failed)
-::(call :install)   || (goto :failed)
-:success
-  @echo [MAKE] completed successfully
-exit /b 0
-
-:failed
-  @echo [MAKE] finished with erros
-exit /b 1
-
-rem ............................................................................
-
-:clean
-  call "%eDIR_BAT_ENGINE%\run.bat" ^
-    "--clean: all" 
-exit /b
-
-:generate
   call "%eDIR_BAT_ENGINE%\run.bat" ^
     "--generate: cmake-makefiles"  ^
     "--configurations: %order%"    ^
-    "--defines: STABLE_RELEASE"    ^
+    "--defines: UNSTABLE_RELEASE"  ^
     "--defines: _USE_32BIT_TIME_T"
-exit /b
 
-:build
   call "%eDIR_BAT_ENGINE%\run.bat" ^
-    "--build: cmake-makefiles"     ^
-    "--configurations: %order%"    ^
-    "--defines: STABLE_RELEASE"    ^
-    "--defines: _USE_32BIT_TIME_T"
-exit /b
-
-:runTests
-  call "%eDIR_BAT_ENGINE%\run.bat" ^
-    "--runTests: test*.exe"        ^
-    "--exclude: mingw*-dynamic; stress-*" ^
-    "--configurations: %order%"
-exit /b
-
-:runStress
-  call "%eDIR_BAT_ENGINE%\run.bat" ^
-    "--runTests: test*.exe"        ^
-    "--exclude: mingw*-dynamic"    ^
-    "--args: stress"               ^
-    "--configurations: %order%"
-exit /b
-
-:install
-  call "%eDIR_BAT_ENGINE%\run.bat" ^
-    "--custom: finalize"           ^
+    "--runIDE: %IDE%"              ^
     "--configurations: %order%"
 exit /b
 
@@ -97,7 +38,7 @@ rem ============================================================================
 :findWorkspace
   if defined eDIR_WORKSPACE (exit /b)
   if not defined eWORKSPACE_SYMPTOMS (
-    set "eWORKSPACE_SYMPTOMS=3rd_party;programs"
+      set "eWORKSPACE_SYMPTOMS=3rd_party;programs"
   ) 
   setlocal
   set "dir_start=%~1"
