@@ -1,6 +1,6 @@
 
 # --- local/mygtest                                        [deploy][setup.cmake]
-# [2023-08-05][19:00:00] 007 Kartonagnick PRE
+# [2023-08-05][19:00:00] 007 Kartonagnick    
 #   --- WorkSpace project (CastleOfDreams)                 [deploy][setup.cmake]
 #   [2022-06-18][19:00:00] 006 Kartonagnick
 #   [2022-06-09][19:00:00] 005 Kartonagnick BUG   

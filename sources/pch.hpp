@@ -1,5 +1,5 @@
 // --- local/mygtest                                                   [pch.hpp]
-// [2023-08-05][19:00:00] 005 Kartonagnick PRE
+// [2023-08-05][19:00:00] 005 Kartonagnick    
 //   --- Katonagnick/mygtest                                           [pch.hpp]
 //   [2021-06-08][15:00:00] 004 Kartonagnick
 //   [2021-06-05][12:10:00] 003 Kartonagnick

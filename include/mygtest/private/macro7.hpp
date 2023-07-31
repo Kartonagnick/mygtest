@@ -1,5 +1,5 @@
 // --- local/mygtest                                                [macro7.hpp]
-// [2023-08-05][19:00:00] 004 Kartonagnick PRE
+// [2023-08-05][19:00:00] 004 Kartonagnick    
 //   --- Katonagnick/mygtest                              [macro/overload-7.hpp]
 //   [2021-06-08][15:00:00] 003 Kartonagnick
 //   [2021-04-19][08:07:24] 002 Kartonagnick
