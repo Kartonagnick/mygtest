@@ -1,12 +1,12 @@
 
 # --- local/mygtest                                              [project.root]
-# [2023-07-23][21:50:00] 001 Kartonagnick    
+# [2023-08-05][19:00:00] 002 Kartonagnick PRE
+# [2023-07-23][21:50:00] 001 Kartonagnick
 # [2023-07-23][20:00:00] registration on local
 # [2023-07-23][17:50:00] birthday of the project
 
 #------------------------------------------------------------------------------
 
 # INCLUDE_CONFIGURATIONS =
-# EXCLUDE_CONFIGURATIONS = mingw494:32:all:static
-VERSION = ver-0.0.1
-
+EXCLUDE_CONFIGURATIONS = mingw494:32:all:static
+VERSION = ver-0.0.2
