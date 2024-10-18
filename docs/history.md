@@ -5,7 +5,7 @@
 [S]: icons/success.png
 [B]: icons/bug.png
 
-[![P]][H] **История изменений**  
+[![S]][H] **История изменений**  
 --------------------------------------------------------------------------------
 
 23 июля 2023, 20:00:00. Регистрация в [локальном хранилище][LO]  
@@ -33,7 +33,7 @@
 [LO]:          D:/local/mygtest/README.md
 
 
-[![P]][H] **v0.0.1 (rep)**
+[![S]][H] **v0.0.1 (rep)**
 --------------------------------------------------------------------------------
 [![V]][VE001] [![2023-07-23 21:50]][VE001]  
 
@@ -46,16 +46,16 @@
 | 2023-07-23 | 21:20 | [#1-rep-first] | BEGIN  |  
 
 1. add: `docs`  
-   - add: `logo.png`      (001) PRE  
-   - add: `changelog.md`  (001) PRE  
-   - add: `chrono.md`     (001) PRE  
-   - add: `history.md`    (001) PRE  
-   - add: `docs.md`       (001) PRE  
-   - add: `icons` ...     (002)  
+   - add: `logo.png`       001  
+   - add: `changelog.md`   001  
+   - add: `chrono.md`      001  
+   - add: `history.md`     001  
+   - add: `docs.md`        001  
+   - add: `icons` ...      002  
 2. add: `docs/other`  
    - add: `calendar.md`  
-3. add: `.gitignore`      (001) PRE  
-4. add: `project.root`    (001) PRE  
+3. add: `.gitignore`       001  
+4. add: `project.root`     001  
 5. fix: `README.md`  
 
 [#1-rep-first]: tasks/2023-07-23-0001-rep-first.md
